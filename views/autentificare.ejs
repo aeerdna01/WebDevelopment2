@@ -1,0 +1,16 @@
+<div class="card-container">
+    <section class="login-section">
+      <% if (errorMessage != null) { %>
+        <h1 class="error-message"><%= errorMessage %></h1>
+      <% } %>
+      <form action="/verificare-autentificare" method="post" class="login-form">
+        <input type="text" id="username" name="username" placeholder="utilizator" required>
+        <input type="password" id="password" name="password" placeholder="parola" required>
+        <br>
+        <input type="submit" value="Autentificare">
+      </form>
+      <br>
+    </section>
+  </div>
+  <br><br><br><br>
+  

@@ -1,0 +1,28 @@
+[
+    {
+      "question": "Care fruct conține cele mai multe semințe?",
+      "options": ["Căpșună", "Rodie", "Pepene galben", "Kiwi"],
+      "correct": 1
+    },
+    {
+        "question": "Care fruct este considerat 'aurul galben'?",
+        "options": ["Banana", "Mango", "Ananas", "Piersică"],
+        "correct": 1
+      },
+    {
+      "question": "Care fruct are cel mai mare conținut de vitamina C?",
+      "options": ["Kiwi", "Lămâie", "Portocală", "Grepfrut"],
+      "correct": 1
+    },
+    {
+        "question": "Care fruct este considerat un superaliment datorită conținutului ridicat de antioxidanți?",
+        "options": ["Afine", "Căpșuni", "Coacăze", "Zmeură"],
+        "correct": 0
+      },
+    {
+      "question": "Care fruct este considerat simbolul sănătății și purității?",
+      "options": ["Măr", "Banana", "Kiwi", "Lămâie"],
+      "correct": 0
+    }
+  ]
+  

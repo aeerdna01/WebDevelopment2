@@ -1,0 +1,28 @@
+<% if (authenticatedUser != null) { %>
+    <h1 class="greeting">Autentificat ca <%= authenticatedUser.firstName %> <%= authenticatedUser.lastName %>!</h1>
+    <% if (currentUsername != null) { %>
+      <h1 class="welcome">Bine ai venit, <%= currentUsername %>!</h1>
+    <% } %>
+  <% } %>
+<section>   
+    <div class="products-container">
+        <% if (authenticatedUser) { %>
+            <button class="add-to-cart" onclick="window.location.href = '/vizualizare-cos'">Vizualizare coș de cumpărături</button>
+        <% } %>
+        <div class="products-list">
+            <h1></h1>
+            <ul class="cards-list">
+                <% for(let i = 0; i < products.length; i++) { %>
+                    <li class="card">
+                        <% if (authenticatedUser) { %>
+                            <button class="add-to-cart-btn" onclick="window.location.href = '/adaugare-cos?id=<%= products[i].id %>'">Adaugă în coș</button>
+                        <% } %>
+                        <h3><%= products[i].name %></h3>
+                        <p class="price"><%= products[i].price %></p>
+                        <p><%= products[i].description %></p>
+                    </li>
+                <% } %>
+            </ul>   
+        </div>
+    </div>
+</section>

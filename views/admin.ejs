@@ -1,0 +1,27 @@
+<% if (authenticatedUser) { %>
+      <% if (authenticatedUser.role === "admin") { %> 
+        <div class="card-container">
+            <section class="login-section">
+                <h1>Admin</h1>
+                <% if (adminMessage != null) {%>
+                    <h1 style="color: green;"><%=adminMessage%></h1>
+                <%} %>
+                <h2>Adaugare produs</h2>
+                <form action="/adaugare-produs" method="post" class="login-form">
+                    <label for="name">Nume:</label><br>
+                    <input type="text" id="name" name="name" required><br><br>
+
+                    <label for="price">Preț:</label><br>
+                    <input type="number" id="price" name="price" min="1" required><br><br>
+
+                    <label for="description">Descriere:</label><br>
+                    <input type="text" id="description" name="description" required><br><br>
+
+                    <input type="submit" value="Adaugă produs">
+                </form>
+            </section>
+        </div> 
+        <br><br><br>
+      <% } %> 
+  <% } %>
+

@@ -1,0 +1,345 @@
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  overflow-x: hidden;
+}
+
+h1, h2, h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+
+p {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Reset default browser styles */
+html,
+body,
+header,
+nav,
+main,
+footer,
+div {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set the background color */
+body {
+  background-color: #f4f4f4;
+}
+
+/* Header styles */
+header {
+    position: relative;
+    background-color: #304b1b;
+    color: #fff;
+    top: 0;
+    z-index: 1;
+  }
+
+/* Image container styles */
+.image-container {
+    position: relative;
+    width: 100%;
+  }
+  
+/* Logo styles */
+#logo {
+    width: 1560px; 
+    height: 404px;
+    opacity: 0.6; 
+}
+  
+/* Image text styles */
+.image-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+  }
+
+.image-text h1 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.image-text p {
+    font-size: 18px;
+    margin: 0;
+}
+
+/* Navigation styles */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #304b1b;
+    color: #fff;
+    text-align: right;
+    position: sticky;
+    top: 0;
+    margin: 0;
+    z-index: 1;
+}
+.button-group {
+    display: flex;
+  }
+  
+  .admin-button,
+  .action-button {
+    padding: 8px 16px;
+    background-color: #edeae8e2;
+    color: #304b1b;
+    font-size: 14px;
+    margin-right: 10px;
+  }
+  
+  .logout-button,
+  .login-button {
+    padding: 8px 16px;
+    background-color: #edeae8e2;
+    color: #304b1b;
+    font-size: 14px;
+  }
+
+/* Navigation button styles */
+nav button {
+    padding: 8px 16px;
+    background-color: #edeae8e2;
+    color: #304b1b;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+#title{
+    color: #edeae8e2;
+    font-size: 4em;
+}
+
+
+/* Main content styles */
+main {
+  padding: 20px;
+  margin-top: 40px;
+}
+
+/* Footer styles */
+footer {
+  padding: 10px;
+  background-color: #304b1b;
+  color: #fff;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+/* Footer citation styles */
+footer cite {
+  font-size: 12px;
+  color: #ccc;
+}
+
+/* Customize the fruit shop theme */
+body {
+  color: #304b1b;
+  font-family: Arial, sans-serif;
+}
+
+/* Update link styles */
+a {
+  color: #7a9e06;
+  text-decoration: none;
+}
+
+/* Update button styles */
+button {
+  cursor: pointer;
+}
+
+/* Media query for responsive design */
+@media (max-width: 768px) {
+  /* Adjust styles for smaller screens */
+  header,
+  nav,
+  main,
+  footer {
+    padding: 10px;
+  }
+}
+
+/* products */
+.products-list {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .cards-list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-gap: 20px;
+  }
+  
+  .card {
+    background-color: #f9f9f9;
+    border-radius: 4px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .card .add-to-cart-btn,
+  .add-to-cart,
+  .login-form input[type="submit"]  {
+    padding: 8px 16px;
+    background-color: #304b1b;
+    color: #edeae8e2;
+    font-size: 14px;
+    border-radius: 5px;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .card .add-to-cart-btn:hover,
+  .login-form input[type="submit"]:hover {
+    background-color: #edeae8e2;
+    color: #304b1b;
+  }
+  
+  .card h3 {
+    font-size: 20px;
+    margin-top: 10px;
+  }
+  
+  .card .price {
+    font-weight: bold;
+  }
+  
+  .card p {
+    margin-top: 10px;
+  }
+  
+  /* autentificare */
+  
+  
+  .card-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    transition: box-shadow 1.9s ease;
+  }
+  
+  .card-container-quiz{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    transition: box-shadow 1.9s ease;
+  }
+  .products-container{
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 80px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    transition: box-shadow 1.9s ease;
+  }
+  .card-container:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .login-section {
+    text-align: center;
+  }
+  
+  .error-message {
+    color: red;
+  }
+  
+  .login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+    text-align: left;
+  }
+  
+.login-form input[type="text"],
+.login-form input[type="password"],
+.login-form input[type="number"] {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.greeting,
+.welcome {
+  font-size: 24px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* vizualizare cos */
+.cart-section {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  .section-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .empty-cart-msg {
+    margin: 5px 0;
+    text-align: center;
+  }
+  
+  .cart-items-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .cart-item {
+    margin-bottom: 10px;
+    padding: 10px;
+    margin-left: 40%;
+    margin-right: 40%;
+    background-color: #fff;
+    border-radius: 5px;
+  }
+  
+  .cart-item:last-child {
+    margin-bottom: 0;
+  }
+  
+  .product-name, .product-description {
+    margin: 5px 0;
+  }
+  
+  .cart-item:hover {
+    background-color: #f9f9f9;
+  }
+  

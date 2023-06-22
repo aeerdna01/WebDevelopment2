@@ -1,0 +1,33 @@
+[
+  {
+    "username": "aeerdna01",
+    "password": "test",
+    "firstName": "Andreea",
+    "lastName": "Pîslariu",
+    "email": "a_pislariu@gmail.com",
+    "phone": "0724567821",
+    "role": "admin",
+    "access": "denied",
+    "blockedUntil": "2023-05-31T10:23:54.417Z"
+  },
+  {
+    "username": "vero14",
+    "password": "oscar",
+    "firstName": "Veronica",
+    "lastName": "Pâslariu",
+    "email": "veronicap000@gmail.com",
+    "phone": "0734592863",
+    "role": "user",
+    "access": "allow"
+  },
+  {
+    "username": "mara1",
+    "password": "laland",
+    "firstName": "Mara",
+    "lastName": "Toma",
+    "email": "maratoma16@gmail.com",
+    "phone": "0758291475",
+    "role": "user",
+    "access": "allow"
+  }
+]

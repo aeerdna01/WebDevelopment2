@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Magazin fructe</title>
+    <link rel="stylesheet" type="text/css" href="css/stil.css" />
+</head>
+
+<body>
+    <header>
+        <div class="image-container">
+            <img src="images/menu.jpeg" alt="Logo" id="logo">
+            <div class="image-text">
+            <h1 id="title"><i>Magazin fructe</i></h1>
+          </div>
+        </div>
+      </header>
+
+      <nav>
+        <% if (authenticatedUser) { %>
+          <div class="button-group">
+            <% if (authenticatedUser.role === "admin") { %>
+              <button id="admin" onclick="window.location.href = '/admin'" class="admin-button"><b><i>Admin</i></b></button>
+            <% } %>
+            <button id="creareBD" onclick="window.location.href = '/creare-bd'" class="action-button"><b><i>CreareDB</i></b></button>
+            <button id="chestionar" onclick="window.location.href = '/chestionar'" class="action-button"><b><i>Chestionar</i></b></button>
+            <button id="inserareBD" onclick="window.location.href = '/inserare-bd'" class="action-button"><b><i>InserareDB</i></b></button>
+          </div>
+          <button id="logoutButton" onclick="window.location.href = '/autentificare'" class="logout-button"><b><i>Deconectare</i></b></button>
+        <% } else { %>
+          <% if (loginButtonVisible) { %>
+            <button id="loginButton" onclick="window.location.href = '/autentificare'" class="login-button"><b><i>Autentificare</i></b></button>
+          <% } %>
+        <% } %>     
+      </nav>
+      
+    
+    <main>
+        <%- body %>
+    </main>
+
+    <footer>
+        <div>
+            <cite>&copy; 2023</cite>
+        </div>
+    </footer>
+</body>
+
+</html>

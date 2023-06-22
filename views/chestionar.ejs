@@ -1,0 +1,24 @@
+<% if (authenticatedUser) { %>
+    <div class="card-container-quiz">
+        <section class="login-section">
+            <form action="/rezultat-chestionar" method="post" class="login-form">
+                <% for (let i = 0; i < questions.length; i++) { %>
+                <label>
+                    <%= i + 1 %>. <%= questions[i].question %>
+                </label>
+                <br>
+                <% for (let j = 0; j < questions[i].options.length; j++) { %>
+                    <label>
+                    <input type="radio" name="question<%= i %>" value="<%= j %>" required>
+                    <%= questions[i].options[j] %>
+                    <br>
+                    </label>
+                <% } %>
+                <br>
+                <% } %>
+                <input type="submit" value="Vezi rezultatul">
+            </form>  
+        </section>
+ </div>   
+ <br><br><br>
+<% } %>

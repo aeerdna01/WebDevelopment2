@@ -1,0 +1,16 @@
+
+    <div class="card-container-quiz">
+        <section class="login-section">
+            <h1>Rezultate Chestionar</h1>
+            <p>În urma realizării chestionarului, ați obținut scorul <%= userCorrectAnswers %>/<%= totalQuestions %></p>
+        
+            <% for (var i = 0; i < results.length; i++) { %>
+                <h3>Întrebarea <%= i + 1 %>:</h3>
+                <p><%= results[i].question %></p>
+                <p>Răspunsul dumneavoastră: <%= results[i].response %></p>
+                <p>Răspunsul corect: <%= results[i].correctAnswer %></p>
+            <% } %>
+        </section>
+ </div>   
+ <br><br><br>
+

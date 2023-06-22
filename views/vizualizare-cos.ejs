@@ -1,0 +1,15 @@
+<section class="cart-section">
+  <h1 class="section-title">Vizualizare coș</h1>
+  <% if (cart.length === 0) { %>
+    <p class="empty-cart-msg">Coșul este gol.</p>
+  <% } else { %>
+    <ul class="cart-items-list">
+      <% for (let i = 0; i < productsCart.length; i++) { %>
+        <li class="cart-item">
+          <p class="product-name">Produs: <%= productsCart[i].name %></p>
+          <p class="product-description">Descriere: <%= productsCart[i].description %></p>
+        </li>
+      <% } %>
+    </ul>          
+  <% } %>
+</section>
