@@ -23,14 +23,6 @@ In terms of security, the application employs measures to protect against unauth
 The following steps are required to set up the project:
 
 ```
-$ npm init
 $ npm install
-$ npm install -g nodemon
-$ npm install express --save
-$ npm install ejs --save
-$ npm install express-ejs-layouts --save
-$ npm install body-parser --save
-$ npm install cookie-parser --save
-$ npm install express-session --save
 $ nodemon app.js
 ```
